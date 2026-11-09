@@ -3,6 +3,35 @@ body {
     padding: 0;
 }
 
+#header {
+    background-color: #5E5653;
+
+}
+
+#header-links {
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    gap: 10%;
+}
+
+.header-link {
+    margin: 0;
+    padding: 0;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #E9E6E7;
+    padding: 10px;
+    
+}
+
 #footer {
     background-color: #5E5653;
     color: #E9E6E7;
