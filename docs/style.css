@@ -1,7 +1,13 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
 #footer {
     background-color: #5E5653;
     color: #E9E6E7;
     padding: 1%;
+    margin: 0;
     position: fixed;
     height: 150px;
     width: 100vw;
