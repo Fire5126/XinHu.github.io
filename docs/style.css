@@ -265,3 +265,62 @@ body {
 #projects-title {
     font-size: 50px;
 }
+
+#information-container {
+    border-radius: 5px;
+    background-color: darkgray;
+    padding: 30px;
+    margin: 150px;
+}
+
+#fname, #femail, #fcountry, #fsubject {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #04AA6D;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical
+}
+
+.select2-container--elegant .select2-selection--single  {
+    background-color: #f8f9fa;
+    width: 100%;
+    border: 1px solid #04AA6D;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical
+}
+
+.select2-container--elegant .select2-selection--single .select2-selection__rendered {
+    color: #1e293b;
+    font-size: 14px;
+    line-height: 26px;
+}
+
+.select2-container--elegant .select2-results__option--highlighted[aria-selected] {
+  background-color: #3b82f6;
+  color: #000000;
+}
+
+.select2-container--elegant .select2-results__option[aria-selected="true"] {
+  background-color: #e2e8f0;
+  color: #000000;
+}
+
+#form-submission {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#form-submission:hover {
+  background-color: #45a049;
+}
+
