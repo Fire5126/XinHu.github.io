@@ -10,16 +10,18 @@
         $(document).ready(function(){
             $(".project-item").mouseenter(function(){
                 $(this).find('p').css("visibility", "visible");
+                $(this).find('img').css("opacity", "0");
                 $(this).css({
-                    "visibility": "hidden",
+                    "background-color": "black",
                     "cursor": "pointer",
                 });
             });
             
             $(".project-item").mouseleave(function(){
                 $(this).find('p').css("visibility", "hidden");
+                $(this).find('img').css("opacity", "100");
                 $(this).css({
-                    "visibility": "visible",
+                    "background-color": "#E9E6E7",
                     "cursor": "default",
                 });
             });
@@ -43,6 +45,26 @@
             $("#demo-link").click(function(){
                 window.location.href = "demo.html"
             });
+
+            $("#contact-link").click(function(){
+                window.location.href = "contact.html"
+            });
+
+            $("#a-course-in-time").click(function(){
+                window.location.href = "https://crumpyofcl.itch.io/a-course-in-time"
+            });
+
+            $("#community-spaces").click(function(){
+                window.location.href = "https://rediscool.itch.io/community-spaces"
+            });
+
+            $("#karen-mania").click(function(){
+                window.location.href = "https://github.com/Fire5126/Karan-Mania"
+            });
+
+            $("#waking-nightmare").click(function(){
+                window.location.href = "https://crumpyofcl.itch.io/waking-nightmare"
+            });
         });
     </script>
 
@@ -64,8 +86,19 @@
             </nav>
 
             <img id="header-logo">
-
         </header>
+
+        <div id="projects">
+            <h1 id="projects-title">Projects:</h1>
+
+            <div id="project-grid">
+                <div class="project-item" id="unknown"><img src="./Imgs/Unknown.jpg" alt="A Course in Time"><p class="project-text">Coming Soon!</p></div>
+                <div class="project-item" id="a-course-in-time"><img src="./Imgs/ACourseInTime.png" alt="A Course in Time"><p class="project-text">2D fantasy side scroller puzzle platformer where you play as a wizard with control over time</p></div>
+                <div class="project-item" id="community-spaces"><img src="./Imgs/CommunitySpace.png" alt="Community Spaces"><p class="project-text">Co-op turn based strategy game where you and you're friend has to build a diverse community</p></div>
+                <div class="project-item" id="karen-mania"><img src="./Imgs/KarenMania.png" alt="Karen Mania"><p class="project-text">2D Top Down wave shooter where you play as a 'Karen' and throw tp at workers</p></div>
+                <div class="project-item" id="waking-nightmare"><img src="./Imgs/WakingNightmare.png" alt="Karen Mania"><p class="project-text">VR Fear Experience where you play as an insomniac trying to fall asleep, but watch the darkness</p></div>
+            </div>
+        </div>
 
         <footer id="footer">
             <!-- Links to various socials to get in contact with me -->

@@ -10,16 +10,18 @@
         $(document).ready(function(){
             $(".project-item").mouseenter(function(){
                 $(this).find('p').css("visibility", "visible");
+                $(this).find('img').css("opacity", "0");
                 $(this).css({
-                    "visibility": "hidden",
+                    "background-color": "black",
                     "cursor": "pointer",
                 });
             });
             
             $(".project-item").mouseleave(function(){
                 $(this).find('p').css("visibility", "hidden");
+                $(this).find('img').css("opacity", "100");
                 $(this).css({
-                    "visibility": "visible",
+                    "background-color": "#E9E6E7",
                     "cursor": "default",
                 });
             });
@@ -97,7 +99,7 @@
         </div>
 
         <div id="recent-projects">
-            <h1 id="">Recent Projects:</h1>
+            <h1>Recent Projects:</h1>
 
             <div id="project-grid">
                 <div class="project-item" id="course-time"><img src="./Imgs/ACourseInTime.png" alt="A Course in Time"><p class="project-text">2D fantasy side scroller puzzle platformer where you play as a wizard with control over time</p></div>

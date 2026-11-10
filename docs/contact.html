@@ -8,22 +8,6 @@
 
     <script>
         $(document).ready(function(){
-            $(".project-item").mouseenter(function(){
-                $(this).find('p').css("visibility", "visible");
-                $(this).css({
-                    "visibility": "hidden",
-                    "cursor": "pointer",
-                });
-            });
-            
-            $(".project-item").mouseleave(function(){
-                $(this).find('p').css("visibility", "hidden");
-                $(this).css({
-                    "visibility": "visible",
-                    "cursor": "default",
-                });
-            });
-
             $("#home-link").click(function(){
                 window.location.href = "index.html"
             });
@@ -42,6 +26,10 @@
 
             $("#demo-link").click(function(){
                 window.location.href = "demo.html"
+            });
+
+            $("#contact-link").click(function(){
+                window.location.href = "contact.html"
             });
         });
     </script>
