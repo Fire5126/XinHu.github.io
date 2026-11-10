@@ -66,6 +66,29 @@ body {
     justify-content: flex-end;
 }
 
+#intro {
+
+}
+
+#recent-projects {
+
+}
+
+#project-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+}
+
+.project-item{
+    text-align: center;
+    padding: 10px;
+}
+
+#get-in-touch {
+
+}
+
 #footer {
     background-color: #5E5653;
     padding: 1%;
