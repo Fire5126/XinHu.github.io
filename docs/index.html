@@ -3,7 +3,68 @@
     <head>
         <title>Portfolio</title>
         <link rel="stylesheet" href="style.css">
+        <script src="./jquery-4.0.0.min.js"></script>
     </head>
+
+    <script>
+        $(document).ready(function(){
+            $(".project-item").mouseenter(function(){
+                $(this).find('p').css("visibility", "visible");
+                $(this).css({
+                    "visibility": "hidden",
+                    "cursor": "pointer",
+                });
+            });
+            
+            $(".project-item").mouseleave(function(){
+                $(this).find('p').css("visibility", "hidden");
+                $(this).css({
+                    "visibility": "visible",
+                    "cursor": "default",
+                });
+            });
+
+            $("#home-link").click(function(){
+                window.location.href = "index.html"
+            });
+
+            $("#about-link").click(function(){
+                window.location.href = "about.html"
+            });
+
+              $("#about-button").click(function(){
+                window.location.href = "about.html"
+            });
+
+            $("#project-link").click(function(){
+                window.location.href = "project.html"
+            });
+
+            $("#project-button").click(function(){
+                window.location.href = "project.html"
+            });
+
+            $("#demo-link").click(function(){
+                window.location.href = "demo.html"
+            });
+
+            $("#contact-link").click(function(){
+                window.location.href = "contact.html"
+            });
+
+            $("#course-time").click(function(){
+                window.location.href = "https://crumpyofcl.itch.io/a-course-in-time"
+            });
+
+            $("#community").click(function(){
+                window.location.href = "https://rediscool.itch.io/community-spaces"
+            });
+
+            $("#karen").click(function(){
+                window.location.href = "https://github.com/Fire5126/Karan-Mania"
+            });
+        });
+    </script>
 
     <body>  
         <header id="header">
@@ -14,11 +75,11 @@
             </div>
             <nav>
                 <div id="header-links">
-                   <button><p1 id="home-link" class="header-link">Home</p1></button>
-                    <button><p1 id="about-link" class="header-link">About</a></button>
-                    <button><p1 id="project-link" class="header-link">Projects</a></button>
-                    <button><p1 id="demo-link" class="header-link">Demos</a></button>
-                    <button><p1 id="contact-link" class="header-link">Contact</a></button>
+                   <button id="home-link"><p1  class="header-link">Home</p1></button>
+                    <button id="about-link"><p1 class="header-link">About</p1></button>
+                    <button id="project-link"><p1 class="header-link">Projects</p1></button>
+                    <button id="demo-link"><p1 class="header-link">Demos</p1></button>
+                    <button id="contact-link"><p1 class="header-link">Contact</p1></button>
                 </div>
             </nav>
 
@@ -39,9 +100,9 @@
             <h1 id="">Recent Projects:</h1>
 
             <div id="project-grid">
-                <div class="project-item"><img src="./Imgs/ACourseInTime.png" alt="A Course in Time"></div>
-                <div class="project-item"><img src="./Imgs/CommunitySpace.png" alt="Community Spaces"></div>
-                <div class="project-item"><img src="./Imgs/KarenMania.png" alt="Karen Mania"></div>
+                <div class="project-item" id="course-time"><img src="./Imgs/ACourseInTime.png" alt="A Course in Time"><p class="project-text">2D fantasy side scroller puzzle platformer where you play as a wizard with control over time</p></div>
+                <div class="project-item" id="community"><img src="./Imgs/CommunitySpace.png" alt="Community Spaces"><p class="project-text">Co-op turn based strategy game where you and you're friend has to build a diverse community</p></div>
+                <div class="project-item" id="karen"><img src="./Imgs/KarenMania.png" alt="Karen Mania"><p class="project-text">2D Top Down wave shooter where you play as a 'Karen' and throw tp at workers</p></div>
             </div>
 
             <button id="project-button"><p1>Explore Further -></a></button>

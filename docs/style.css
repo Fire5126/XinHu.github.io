@@ -118,11 +118,12 @@ body {
     height: 200px;
     overflow: hidden;
     border-radius: 50%;
+    background-color: #E9E6E7;
     
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #E9E6E7;
+    position: relative;
 }
 
 .project-item img {
@@ -131,6 +132,15 @@ body {
     width: auto;
     height: auto;
     display: block;
+}
+
+.project-item p {
+    position: absolute;
+    font-size: 19px;
+    width: 150px;
+    visibility: hidden;
+    padding: 5px;
+    background-color: black
 }
 
 #project-button {
