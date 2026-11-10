@@ -8,7 +8,63 @@
 
     <script>
         $(document).ready(function(){
+            $(".project-item").mouseenter(function(){
+                $(this).find('p').css("visibility", "visible");
+                $(this).find('img').css("opacity", "0");
+                $(this).css({
+                    "background-color": "black",
+                    "cursor": "pointer",
+                });
+            });
+            
+            $(".project-item").mouseleave(function(){
+                $(this).find('p').css("visibility", "hidden");
+                $(this).find('img').css("opacity", "100");
+                $(this).css({
+                    "background-color": "#E9E6E7",
+                    "cursor": "default",
+                });
+            });
 
+            $("#home-link").click(function(){
+                window.location.href = "index.html"
+            });
+
+            $("#about-link").click(function(){
+                window.location.href = "about.html"
+            });
+
+              $("#about-button").click(function(){
+                window.location.href = "about.html"
+            });
+
+            $("#project-link").click(function(){
+                window.location.href = "project.html"
+            });
+
+            $("#demo-link").click(function(){
+                window.location.href = "demo.html"
+            });
+
+            $("#contact-link").click(function(){
+                window.location.href = "contact.html"
+            });
+
+            $("#farmer-empire").click(function(){
+                window.location.href = "https://github.com/Fire5126/Prototype3-FarmersEmpire"
+            });
+
+            $("#stick-fighter").click(function(){
+                window.location.href = "https://xin-hu-dobbie.itch.io/stick-fighter"
+            });
+
+            $("#daughter-advisor").click(function(){
+                window.location.href = "https://xin-hu-dobbie.itch.io/the-daughters-advisor"
+            });
+
+            $("#perlin-noise").click(function(){
+                window.location.href = "https://github.com/Fire5126/Example-of-Perlin-Noise-Generator"
+            });
         });
     </script>
 
@@ -30,8 +86,18 @@
             </nav>
 
             <img id="header-logo">
-
         </header>
+
+        <div id="projects">
+            <h1 id="projects-title">Prototypes and Tech Demos:</h1>
+
+            <div id="project-grid">
+                <div class="project-item" id="farmer-empire"><img src="./Imgs/FarmerEmpire.png" alt="A Farmer's Empire"><p class="project-text">An idle clicker farming game where you player as a farmer inheriting their family's plot of land</p></div>
+                <div class="project-item" id="stick-fighter"><img src="./Imgs/StickFighter.png" alt="Stick Fighter"><p class="project-text">A 2D side view fighting game where you play as unique stick figures fighting to be at the top</p></div>
+                <div class="project-item" id="daughter-advisor"><img src="./Imgs/DaughtersAdvisor.png" alt="Daughter's Advisor"><p class="project-text">A medieval fantasy interactive narrative game where you must give advice to a princess</p></div>
+                <div class="project-item" id="perlin-noise"><img src="./Imgs/PerlinNoise.png" alt="Perlin Noise Generator"><p class="project-text">A tech demo of a perlin noise generator to create terrain using the height map</p></div>
+            </div>
+        </div>
 
         <footer id="footer">
             <!-- Links to various socials to get in contact with me -->

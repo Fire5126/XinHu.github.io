@@ -8,7 +8,34 @@
 
     <script>
         $(document).ready(function(){
+            $("#home-link").click(function(){
+                window.location.href = "index.html"
+            });
 
+            $("#about-link").click(function(){
+                window.location.href = "about.html"
+            });
+
+              $("#about-button").click(function(){
+                window.location.href = "about.html"
+            });
+
+            $("#project-link").click(function(){
+                window.location.href = "project.html"
+            });
+
+            $("#demo-link").click(function(){
+                window.location.href = "demo.html"
+            });
+
+            $("#contact-link").click(function(){
+                window.location.href = "contact.html"
+            });
+
+            $("#cv-button").click(function(e){
+                e.preventDefault();
+                window.location.href = "XDobbie_CV.pdf"
+            });
         });
     </script>
 
@@ -30,8 +57,28 @@
             </nav>
 
             <img id="header-logo">
-
         </header>
+
+        <div id="about-section">
+            <h1>About Me:</h1>
+            <p>I am a highly motivated self-starter who can be relied upon to always go the extra distance, I get energized by interacting with people in all types of environments and derive great satisfaction from doing whatever I do to the best of my ability. I work really well in teams and try my best to get along with everyone but also know when to stand my ground. I work hard and  I am passionate about video games and their development. I have a diverse range of skills that can be utilized in designing and creating video games.</p>
+        </div>
+
+        <div id="skill-section">
+            <h1>My Skills:</h1>
+            <p>I have utilised various software and have a great familiarity with them. I've utilised multiple programming language but I'm mainly used to using C# and Java.</p>
+            <p>For game engines I'm very familar with Unity but also have experience in Unreal Engine and GameMaker Studio, I've also utilised Microsoft Visual Studio as well as Visual Studio Code.</p>
+            <p>Artistic Software that I use regularly are blender for modelling and animating 3D assets, I also utilise Aseprite for my pixel art. For more concept art, storyboards and drawings I use either Krita or Adobe Photoshop. I've also used Figma for UI interaction and mock ups.</p>
+            <p>For game development I've learnt to use multiple tools for efficiency and when having to explain concepts to team members. I've used Jira and HackNPlan for task trackers and sprint managers. Git has been used for most of my projects as its version control for either the team having access or for me to be able to swap between my laptop and home PC.</p>
+        </div>
+
+        <div id="job-section">
+            <h1>Job Section:</h1>
+            <p>I am currently working as a dance instructor and a head teacher.</p>
+            <p>While working these casual jobs, I am currently looking for a job or being contracted.</p>
+            <button id="cv-button">Download My CV -></button>
+        </div>
+
 
         <footer id="footer">
             <!-- Links to various socials to get in contact with me -->
