@@ -4,6 +4,8 @@
         <title>Portfolio</title>
         <link rel="stylesheet" href="style.css">
         <script src="./jquery-4.0.0.min.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0/dist/css/select2.min.css" rel="stylesheet"/>
+        <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0/dist/js/select2.min.js"></script>
     </head>
 
     <script>
@@ -31,6 +33,23 @@
             $("#contact-link").click(function(){
                 window.location.href = "contact.html"
             });
+
+            const countryDropDown = $("#fcountry");
+
+            $.getJSON("country-json.json", function(data){
+                $.each(data, function(index, country){
+                    var value = country.toLowerCase().replace(/\s+/g, "");
+                    countryDropDown.append(
+                        $('<option></option>')
+                            .attr('value', value)
+                            .text(country)
+                    );
+                });
+            });
+
+            countryDropDown.select2({
+                theme: "elegant"
+            });
         });
     </script>
 
@@ -55,7 +74,27 @@
         </header>
 
         <div id="contact-section">
-            
+            <div id="information-container">
+                <h1>Contact Me</h1>
+                <form name="input" method = "POST" action="https://formspree.io/Xin.Dobbie1@gmail.com">
+                    <label for="fname" class="form-text">Name: </label>
+                    <input type="text" name="Name" placeholder="Your Name..." id="fname">
+
+                    <label for="femail" class="form-text">Email: </label>
+                    <input type="email" name="_replyto" placeholder="Your Email..." id="femail">
+
+                    <label for="fcountry" class="form-text">Country:</label>
+                    <select name="country" id="fcountry">
+                        <option value="" disabled selected>Select a country</option>
+                    </select>
+
+                    <label for="fsubject" class="form-text">Subject</label> 
+                    <textarea name="subject" placeholder="Type your message..." id="fsubject"></textarea>
+                    
+                    <input type="submit" value="Send" id="form-submission">
+                    <input type="hidden" name="_subject" value="New Submission!">
+                </form>
+            </div>
         </div>
 
         <footer id="footer">
