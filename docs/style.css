@@ -1,15 +1,15 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #7B7F8A;
+    background-color: black;
     color: #E9E6E7;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 #header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #5E5653;
     margin: 0;
     padding: 10px 20px;
 }
@@ -39,13 +39,15 @@ body {
     padding: 0px 30px;
     min-width: 30px;
     height: 100%;
-    background-color: #5E5653;
+    background-color: black;
+    color: #E9E6E7;
     border: none;
     cursor: pointer;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 #header-links button:hover {
-    background-color: #AB978C;
+    color: darkgray;
 }
 
 .header-link {
@@ -67,11 +69,42 @@ body {
 }
 
 #intro {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
 
+#intro-title {
+    margin-left: 25px;
+    margin-top: 0;
+}
+
+#intro-description {
+    margin-left: 25px;
+}
+
+#about-button {
+    margin-left: 25px;
+    color: #E9E6E7;
+    appearance: none;
+    background: none;
+    border: none;
+    padding: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+}
+
+#about-button:hover {
+    color: darkgray;
+    cursor: pointer;
 }
 
 #recent-projects {
-
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 100px;
 }
 
 #project-grid {
@@ -81,22 +114,50 @@ body {
 }
 
 .project-item{
-    text-align: center;
-    padding: 10px;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E9E6E7;
 }
 
-#get-in-touch {
+.project-item img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    display: block;
+}
 
+#project-button {
+    margin-left: 25px;
+    margin-top: 25px;
+    padding: 0;
+
+    appearance: none;
+    background: none;
+    border: none;
+
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    color: #E9E6E7;
+}
+
+#project-button:hover {
+    color: darkgray;
+    cursor: pointer;
 }
 
 #footer {
-    background-color: #5E5653;
-    padding: 1%;
+    padding: 2%;
+    padding-bottom: 0;
     margin: 0;
-    position: fixed;
     height: 150px;
-    width: 100vw;
-    
+    margin-top: 50px;
 }
 
 #footer-copyright {
