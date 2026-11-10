@@ -8,7 +8,41 @@
 
     <script>
         $(document).ready(function(){
+            $(".project-item").mouseenter(function(){
+                $(this).find('p').css("visibility", "visible");
+                $(this).css({
+                    "visibility": "hidden",
+                    "cursor": "pointer",
+                });
+            });
+            
+            $(".project-item").mouseleave(function(){
+                $(this).find('p').css("visibility", "hidden");
+                $(this).css({
+                    "visibility": "visible",
+                    "cursor": "default",
+                });
+            });
 
+            $("#home-link").click(function(){
+                window.location.href = "index.html"
+            });
+
+            $("#about-link").click(function(){
+                window.location.href = "about.html"
+            });
+
+              $("#about-button").click(function(){
+                window.location.href = "about.html"
+            });
+
+            $("#project-link").click(function(){
+                window.location.href = "project.html"
+            });
+
+            $("#demo-link").click(function(){
+                window.location.href = "demo.html"
+            });
         });
     </script>
 
