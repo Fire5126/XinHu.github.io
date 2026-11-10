@@ -273,7 +273,7 @@ body {
     margin: 150px;
 }
 
-#fname, #femail, #fcountry, #fsubject {
+#fname, #femail, #fcountry, #fmessage {
     width: 100%;
     padding: 12px;
     border: 1px solid #04AA6D;

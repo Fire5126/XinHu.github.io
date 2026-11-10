@@ -50,6 +50,12 @@
             countryDropDown.select2({
                 theme: "elegant"
             });
+
+            window.onbeforeunload = () => {
+                for(const form of document.getElementsByTagName('form')) {
+                    form.reset();
+                }
+            }
         });
     </script>
 
@@ -88,8 +94,8 @@
                         <option value="" disabled selected>Select a country</option>
                     </select>
 
-                    <label for="fsubject" class="form-text">Subject</label> 
-                    <textarea name="subject" placeholder="Type your message..." id="fsubject"></textarea>
+                    <label for="fmessage" class="form-text">Subject</label> 
+                    <textarea name="message" placeholder="Type your message..." id="fmessage"></textarea>
                     
                     <input type="submit" value="Send" id="form-submission">
                     <input type="hidden" name="_subject" value="New Submission!">
